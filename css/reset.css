@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat-Regular';
+    color: rgb(19, 18, 18);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
