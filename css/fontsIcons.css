@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts-icon/fonts/icons.eot?2ezy7w');
+  src: url('../fonts-icon/fonts/icons.eot?2ezy7w#iefix') format('embedded-opentype'),
+    url('../fonts-icon/fonts/icons.ttf?2ezy7w') format('truetype'),
+    url('../fonts-icon/fonts/icons.woff?2ezy7w') format('woff'),
+    url('../fonts-icon/fonts/icons.svg?2ezy7w#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, 
+[class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-telegram:before {
+  content: "\e900";
+}
+._icon-twitter:before {
+  content: "\e901";
+}
+._icon-instagram:before {
+  content: "\e902";
+}
+._icon-facebook:before {
+  content: "\e903";
+}
+._icon-heart:before {
+  content: "\e904";
+}
+._icon-search:before {
+  content: "\e905";
+}
+._icon-bag:before {
+  content: "\e906";
+}
+._icon-cart:before {
+  content: "\e907";
+}
+._icon-hot-mod:before {
+  content: "\e908";
+  color: #6ac0f3;
+}
+._icon-new-mod:before {
+  content: "\e909";
+  color: #d24a43;
+}
+._icon-sale-mod:before {
+  content: "\e90a";
+  color: #74b65f;
+}
+._icon-logo:before {
+  content: "\e90b";
+  color: #ffde00;
+}

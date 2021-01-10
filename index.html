@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fontsIcons.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -37,28 +38,29 @@
                                 <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-ru" href="#">Russian</a></li>
                             </ul>
                         </div>
-                            <a class="wishlist wishlist__margin" href="#" >Wishlist</a>
+                            <a class="wishlist wishlist__margin wishlist--true" href="#">
+                                <svg class="wishlist__icon"><use xlink:href="/icons/sprite.svg#heart"></use></svg>
+                                <p class="wishlist__title">Wishlist</p>
+                            </a>
                             <ul class="icon">
                                 <li class="social__item">
-                                    <a class="social__link " href="https://ru-ru.facebook.com/" target="_blank" width="15px" height="15px">
-                                        <view id="facebook social__link--fb" viewBox="0 0 511 511" />
-
-                                        <!-- <svg class="social-icon"><use xlink:href="/image/sprite.svg#facebook"></use></svg> -->
+                                    <a class="social__link social__link-fb" href="https://ru-ru.facebook.com/" target="_blank" viewBox="0 0 320 512">
+                                        <svg class="social-icon social-icon-fb"><use xlink:href="/icons/sprite.svg#facebook"></use></svg>
                                     </a>
                                 </li>
                                 <li class="social__item">
-                                    <a class="social__link social__link--vk" href="https://vk.com/" target="_blank">
-                                        <!-- <svg class="social-icon"><use xlink:href="/image/sprite.svg#vk"></use></svg> -->
+                                    <a class="social__link" href="https://vk.com/" target="_blank">
+                                        <svg class="social-icon"><use xlink:href="/icons/sprite.svg#telegram"></use></svg>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a class="social__link social__link--in" href="https://www.instagram.com/" target="_blank">
-                                        <!-- <svg class="social-icon"><use xlink:href="/image/sprite.svg#instagram"></use></svg> -->
+                                        <svg class="social-icon"><use xlink:href="/icons/sprite.svg#instagram"></use></svg>
                                     </a>
                                 </li>
                                 <li class="social__item">
                                     <a class="social__link social__link--tw" href="https://twitter.com/" target="_blank">
-                                        <!-- <svg class="social-icon"><use xlink:href="/image/sprite.svg#twitter"></use></svg> -->
+                                        <svg class="social-icon"><use xlink:href="/icons/sprite.svg#twitter"></use></svg>
                                     </a>
                                 </li>
                             </ul>
@@ -72,7 +74,7 @@
                     <div class="header__bottom-wrapper">
                         <div class="logo logo__margin">
                             <a class="logo__link" href="#">
-                                <svg class="logo__img"><use xlink:href="/image/sprite.svg#logo"></use></svg>
+                                <svg class="logo__img"><use xlink:href="/icons/sprite.svg#logo"></use></svg>
                             </a>
                         </div>
                         <nav class="categories">
@@ -91,7 +93,7 @@
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">The dark knight</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">Terminator 2: judgment day</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">Jurassic Park</a></li>
-                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link categories__mega-menu-link--sale" href="#">X-men: First Class</a></li>
+                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link _icon-telegram categories__mega-menu-link--sale" href="#">X-men: First Class</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="categories__mega-menu-items">
@@ -285,7 +287,8 @@
                         <div class="search-box search-box__margin">
                             <div class="search-box__container">
                                 <input class="search-box__input" type="text" placeholder="Search item">
-                                <a class="search-box__btn" href="">O
+                                <a class="search-box__btn" href="#">
+                                    <svg class="search-box__icon"><use xlink:href="/icons/sprite.svg#search"></use></svg>
                                 </a>
                             </div>
                         </div>
@@ -322,6 +325,48 @@
             </div>
         </div>
     </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__inner">
+                <div class="promo__slider">
+                    <div class="promo__slider-item">
+                        <div class="promo__banner">
+                            <h2 class="promo__banner-title">downhill bicycles</h2>
+                            <p class="promo__banner-text">Savw 40% only today</p>
+                        </div>
+                    </div>
+                    <div class="promo__slider-item">
+                        <div class="promo__banner">
+                            <h2 class="promo__banner-title">downhill bicycles</h2>
+                            <p class="promo__banner-text">Savw 40% only today</p>
+                        </div>
+                    </div>
+                    <div class="promo__slider-item">
+                        <div class="promo__banner">
+                            <h2 class="promo__banner-title">downhill bicycles</h2>
+                            <p class="promo__banner-text">Savw 40% only today</p>
+                        </div>
+                    </div>
+                    <div class="promo__slider-item">
+                        <div class="promo__banner">
+                            <h2 class="promo__banner-title">downhill bicycles</h2>
+                            <p class="promo__banner-text">Savw 40% only today</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__info">
+                    <div class="guarantee">
+                        <h3 class="guarantee__title"></h3>
+                        <p class="guarantee__text"></p>
+                    </div>
+                    <div class="newsletter">
+                        <h3 class="newsletter__title"></h3>
+                        <p class="newsletter__text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
     <script src="/js/main.js"></script>
 </body>

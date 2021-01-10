@@ -80,14 +80,14 @@
     border-right: 2px solid #5c5c5c;
     transform: rotate(45deg);
     transition: transform .5s;
+    z-index: 0;
 }
 
 .lang-menu__selected-lang{
     width: 100%;
     padding: 9px 0 9px 34px;
     background-color: #232323;
-    border-top-right-radius: 2px;
-    border-top-left-radius: 2px;
+    border-radius: 2px;
     top: 1px;
     cursor: pointer;
 }
@@ -165,8 +165,8 @@
 /* WISHLIST */
 
 .wishlist{
-    position: relative;
-    padding: 9px 18px 9px 33px;
+    display: flex;
+    padding: 9px 14px 9px 14px;
     background-color: #232323;
     border-radius: 2px;
     font-size: 12px;
@@ -175,21 +175,21 @@
     margin-right: 140px;
 }
 
+.wishlist--true .wishlist__icon{
+    fill: #c52f2f;
+
+}
+
 .wishlist__margin{
     margin-right: 140px;
 }
 
-.wishlist::before{
-    content: "";
-    position: absolute;
-    width: 14px;
-    height: 11px;
-    top: 50%;
-    left: 11px;
-    transform: translate(0,-50%);
-    background-image: url(./image/wishlist.png);
+.wishlist__icon{
+    width: 12px;
+    max-height: 14px;
+    margin-right: 7px;
+    fill:  #808080;
 }
-
 /* SOCIAL_ICONS */
 
 .icon{
@@ -202,24 +202,17 @@
 
 .social-icon{
     width: 15px;
-    height: 15px;
+    max-height: 20px ;
     fill: #434343;
     transition: .3s;
 }
 
+.social-icon-fb{
+    width: 9px;
+}
+
 .social-icon:hover{
     fill: #3057d6;
-}
-/* 
-.social__link{
-    
-} */
-
-.social__link--fb{
-    background: url(../image/sprite.svg) no-repeat;
-    background-size: 15px 15px;
-    background-position: 0 -511px;
-
 }
 
 /* HEADER BOTTOM */
@@ -238,10 +231,10 @@
 /* LOGO */
 
 .logo__img{
-    width: 145px; 
-    height:28px;
-    font-family: 'Montserrat-Regular';
+    max-height: 27px;
+    max-width: 144px;
 }
+
 
 .logo__margin{
     margin-right: 59px;
@@ -347,12 +340,6 @@
     transition: color .3s;
 }
 
-.categories__mega-menu-link--sale{
-    background: url("../image/sprite.svg") no-repeat;
-    background-size: 15px 15px;
-    background-position: 0 -510px;
-}
-
 .categories__mega-menu-link:hover{
     color: #0c0c0c;
 }
@@ -377,7 +364,7 @@
     width: 100%;
 }
 
-.categories__item:hover .categories__mega-menu{
+.categories__item:nth-child(1).categories__item--opened .categories__mega-menu{
     display: block;
 }
 
@@ -490,6 +477,13 @@
     position: relative;
 }
 
+.search-box__icon{
+    fill: #585454;
+    width: 15px;
+    height: 15px;
+    transition: fill .5s;
+}
+
 .search-box__margin{
     margin-right: 30px;
 }
@@ -500,12 +494,12 @@
     top: 0;
     transform: translateY(-50%);
     display: flex;
-    /* justify-content: flex-end; */
     align-items: center;
     overflow: hidden;
     border-radius: 35px;
-    height:45px;
-    transition: .5s;
+    height: 43px;
+    box-shadow: none;
+    transition: all .5s;
 }
 
 .search-box__input {
@@ -522,12 +516,17 @@
 
 .search-box__input::placeholder{
     color: transparent;
-    font-weight: 500;
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
     transition: color .5s;
 }
 
-.search-box__container:hover > .search-box__input::placeholder{
-    color: rgb(70, 69, 69);
+.search-box__container:hover{
+    box-shadow: 5px 4px 5px -1px rgba(0,0,0,0.2) inset;
+}
+
+.search-box__container:hover .search-box__input::placeholder{
+    color: rgb(165, 165, 165);
 }
 
 .search-box__btn {
@@ -539,22 +538,27 @@
     background-color: #fff;
     text-align: center;
     border-radius: 50%;
-    border: 2px solid transparent;
+    border: 5px solid transparent;
     transition: border-color .5s;
     
 }
 
 .search-box__container:hover{
-    background-color: rgb(236, 236, 235);
+    background-color: rgb(235, 246, 250);
 }
 
-.search-box__container:hover > .search-box__input{
+.search-box__container:hover .search-box__input{
     padding-left: 20px;
     width: 240px;
 }
 
-.search-box__container:hover > .search-box__btn{
-    border-color: #c2c2c2;
+.search-box__container:hover .search-box__btn{
+    border-color: #fff;
+}
+
+.search-box__container:hover .search-box__icon{
+    /* border-color: #c2c2c2; */
+    fill: rgb(55, 99, 221);
 }
 
 /* LOGIN */
