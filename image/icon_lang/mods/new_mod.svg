@@ -1,0 +1,19 @@
+<svg id="new" xmlns="http://www.w3.org/2000/svg" width="33" height="16" viewBox="0 0 33 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d24a43;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 11px;
+        fill: #fff;
+        text-anchor: end;
+        font-family: Helvetica;
+      }
+    </style>
+  </defs>
+  <path id="bg" class="cls-1" d="M516,180h26a2,2,0,0,1,2,2v12a2,2,0,0,1-2,2H516a2,2,0,0,1-2-2V182A2,2,0,0,1,516,180Zm-2,5-3,3,3,3v-6Z" transform="translate(-511 -180)"/>
+  <text id="new-2" data-name="new" class="cls-2" x="27.59" y="10.618">new</text>
+</svg>

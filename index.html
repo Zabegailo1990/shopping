@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fontsIcons.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header page">
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
@@ -93,7 +94,7 @@
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">The dark knight</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">Terminator 2: judgment day</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">Jurassic Park</a></li>
-                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link _icon-telegram categories__mega-menu-link--sale" href="#">X-men: First Class</a></li>
+                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link categories__mega-menu-link--sale" href="#">X-men: First Class</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="categories__mega-menu-items">
@@ -113,7 +114,7 @@
                                                     <ul class="categories__mega-menu-list">
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">Inception</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">The Hobbit</a></li>
-                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">The Empire Strikes</a></li>
+                                                        <li class="categories__mega-menu-item"><a class="categories__mega-menu-link categories__mega-menu-link--new" href="#">The Empire Strikes</a></li>
                                                         <li class="categories__mega-menu-item"><a class="categories__mega-menu-link" href="#">The dark knight</a></li>
                                                     </ul>
                                                 </div>
@@ -325,49 +326,81 @@
             </div>
         </div>
     </header>
-    <section class="promo">
+    <section class="promo page">
         <div class="container">
             <div class="promo__inner">
                 <div class="promo__slider">
                     <div class="promo__slider-item">
-                        <div class="promo__banner">
-                            <h2 class="promo__banner-title">downhill bicycles</h2>
-                            <p class="promo__banner-text">Savw 40% only today</p>
+                        <div class="promo__banner block-shadow">
+                            <img class="promo__img" src="./image/icon_lang/img_bunner_1.jpg" alt="">
+                            <div class="promo__items">
+                                <div class="promo__info">
+                                    <h2 class="promo__banner-title">downhill bicycles</h2>
+                                    <p class="promo__banner-text">Save 40% only today</p>
+                                </div>    
+                                <a class="promo__link" href="#">read more</a>
+                            </div>
                         </div>
                     </div>
                     <div class="promo__slider-item">
-                        <div class="promo__banner">
-                            <h2 class="promo__banner-title">downhill bicycles</h2>
-                            <p class="promo__banner-text">Savw 40% only today</p>
-                        </div>
-                    </div>
-                    <div class="promo__slider-item">
-                        <div class="promo__banner">
-                            <h2 class="promo__banner-title">downhill bicycles</h2>
-                            <p class="promo__banner-text">Savw 40% only today</p>
-                        </div>
-                    </div>
-                    <div class="promo__slider-item">
-                        <div class="promo__banner">
-                            <h2 class="promo__banner-title">downhill bicycles</h2>
-                            <p class="promo__banner-text">Savw 40% only today</p>
+                        <div class="promo__banner block-shadow">
+                            <img class="promo__img" src="./image/icon_lang/img_bunner_1.jpg" alt="">
+                            <div class="promo__items">
+                                <div class="promo__info">
+                                    <h2 class="promo__banner-title">downhill bicycles</h2>
+                                    <p class="promo__banner-text">Save 40% only today</p>
+                                </div>    
+                                <a class="promo__link" href="#">read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="promo__info">
-                    <div class="guarantee">
-                        <h3 class="guarantee__title"></h3>
-                        <p class="guarantee__text"></p>
-                    </div>
-                    <div class="newsletter">
-                        <h3 class="newsletter__title"></h3>
-                        <p class="newsletter__text"></p>
-                    </div>
+                <div class="promo__outer">
+                    <a class="guarantee block-shadow" href="#">
+                        <h3 class="guarantee__title"><span class="guarantee__title-decor">free</span>guarantee</h3>
+                        <p class="guarantee__text">Stylish bicycle mehanic doing his profissional work in workshop</p>
+                    </a>
+                    <a class="newsletter" href="#">
+                        <h3 class="newsletter__title">singup <span class="newsletter__title-decor">for newsletter</span></h3>
+                        <p class="newsletter__text">Stylish bicycle mehanic doing his profissional work in workshop</p>
+                        <div class="newsletter__mail-form">
+                            <input class="newsletter__input" type="mail" placeholder="Enter your Email">
+                            <button class="newsletter__button" type="submit"></button>
+                        </div>
+                    </a>
+                </div>
+             </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <div class="advantages__items">
+                    <div class="advantages__icon"></div>
+                    <div class="advantages__title">Free shipping on all orders</div>
+                    <div class="advantages__text"></div>
+                </div>
+                <div class="advantages__items">
+                    <div class="advantages__icon"></div>
+                    <div class="advantages__title">Amazing customer service</div>
+                    <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+                </div>
+                <div class="advantages__items">
+                    <div class="advantages__icon"></div>
+                    <div class="advantages__title">International shipping</div>
+                    <div class="advantages__text"></div>
+                </div>
+                <div class="advantages__items">
+                    <div class="advantages__icon"></div>
+                    <div class="advantages__title">Cashback for your card</div>
+                    <div class="advantages__text"></div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="js/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,19 @@
+<svg id="hot" xmlns="http://www.w3.org/2000/svg" width="29" height="16" viewBox="0 0 29 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6ac0f3;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 11px;
+        fill: #fff;
+        text-anchor: end;
+        font-family: Helvetica;
+      }
+    </style>
+  </defs>
+  <path id="bg" class="cls-1" d="M670,370h22a2,2,0,0,1,2,2v12a2,2,0,0,1-2,2H670a2,2,0,0,1-2-2V372A2,2,0,0,1,670,370Zm-2,5-3,3,3,3v-6Z" transform="translate(-665 -370)"/>
+  <text id="hot-2" data-name="hot" class="cls-2" x="23.589" y="10.619">hot</text>
+</svg>
