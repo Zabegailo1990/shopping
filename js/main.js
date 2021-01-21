@@ -13,3 +13,10 @@ $('.promo__slider').slick({
     autoplaySpeed: 2000,
     arrows: false,
 });
+
+
+    $(".card__rating").rateYo({
+        starWidth: "13px",
+        ratedFill: "#ffc600",
+        normalFill: "#e2e2e2"
+    });

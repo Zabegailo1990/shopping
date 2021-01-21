@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css">
     <link rel="stylesheet" href="css/fontsIcons.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/main.css">
@@ -35,7 +36,7 @@
                                 <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-no" href="#">Norsk</a></li>
                                 <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-pl" href="#">Polski</a></li>
                                 <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-de" href="#">German</a></li>
-                                <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-nl" href="#">English</a></li>
+                                <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-en" href="#">English</a></li>
                                 <li class="lang-menu__item"><a class="lang-menu__link lang-menu__link-ru" href="#">Russian</a></li>
                             </ul>
                         </div>
@@ -373,33 +374,124 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages page">
         <div class="container">
             <div class="advantages__inner">
                 <div class="advantages__items">
-                    <div class="advantages__icon"></div>
-                    <div class="advantages__title">Free shipping on all orders</div>
-                    <div class="advantages__text"></div>
+                    <svg class="advantages__icon"><use xlink:href="/icons/sprite.svg#heart"></use></svg>
+                    <div class="advantages__info">
+                        <div class="advantages__title">Free shipping on all orders</div>
+                        <div class="advantages__text">Get Free Shipping on all orders over $75 and free returns</div>
+                    </div>
                 </div>
                 <div class="advantages__items">
-                    <div class="advantages__icon"></div>
-                    <div class="advantages__title">Amazing customer service</div>
-                    <div class="advantages__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
+                    <svg class="advantages__icon"><use xlink:href="/icons/sprite.svg#flying"></use></svg>
+                    <div class="advantages__info">
+                        <div class="advantages__title">Amazing customer service</div>
+                        <div class="advantages__text">We pay these fees so you don't have to! The total billed</div>
+                    </div>
                 </div>
                 <div class="advantages__items">
-                    <div class="advantages__icon"></div>
-                    <div class="advantages__title">International shipping</div>
-                    <div class="advantages__text"></div>
+                    <svg class="advantages__icon"><use xlink:href="/icons/sprite.svg#wallet"></use></svg>
+                    <div class="advantages__info">
+                        <div class="advantages__title">International shipping</div>
+                        <div class="advantages__text">We stand behinde our goods and services and want you</div>
+                    </div>
                 </div>
                 <div class="advantages__items">
-                    <div class="advantages__icon"></div>
-                    <div class="advantages__title">Cashback for your card</div>
-                    <div class="advantages__text"></div>
+                    <svg class="advantages__icon"><use xlink:href="/icons/sprite.svg#truck"></use></svg>
+                    <div class="advantages__info">
+                        <div class="advantages__title">Cashback for your card</div>
+                        <div class="advantages__text">Curently over 50 countries qualify for express international</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="categorie">
+        <div class="categorie__wrap">
+            <div class="container">
+                <div class="categorie__inner">
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/zoltan-tasi-TsB03tz5030-unsplash.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/kak-nauchit-rebenka-katatsya-na-velosipede-logo.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/kak-nauchit-rebenka-katatsya-na-velosipede-logo.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/kak-nauchit-rebenka-katatsya-na-velosipede-logo.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/zoltan-tasi-TsB03tz5030-unsplash.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                    <a class="categorie__box block-shadow" href="#">
+                        <img class="categorie__img" src="/image/icon_lang/kak-nauchit-rebenka-katatsya-na-velosipede-logo.jpg" alt="">
+                        <h3 class="categorie__title">city bicycle</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="card-goods">
+        <div class="card-goods__wrap">
+            <div class="container">
+                <div class="tabs">
+                    <a class="tab" id="tab_1" href="#">new</a>
+                    <a class="tab" id="tab_1" href="#">hit</a>
+                    <a class="tab" id="tab_1" href="#">stock</a>
+                    <a class="tab" id="tab_1" href="#">most popular</a>
+                </div>
+                <div class="tab-content">
+                    <div class="card">
+                        <div class="card__wrapper">
+                            <div class="card__image">
+                                <img class="card__img" src="/image/icon_lang/card__img.png" alt="">
+                            </div>
+                            <div class="card__categorie">
+                                City bicycle
+                            </div>
+                            <h3 class="card__name">
+                                GT 27.5 Avalanche Sport
+                            </h3>
+                            <div class="card__rating" data-rateyo-rating="3.5"></div>
+                            <div class="card__inner">
+                                    <div class="card__price">
+                                        <div class="card__price-sale"></div>
+                                        <div class="card__price-inner">
+                                            <p class="card__price-old">2434</p>
+                                            <p class="card__price-current">1434</p>
+                                        </div>
+                                    </div>
+                                    <div class="card__avalible">
+                                        <p class="card__avalible-true">Avalible for order</p>
+                                        <p class="card__avalible-false">Not avalible</p>
+                                    </div>
+                            </div>
+                                <button class="card__btn-cart" type="submit">
+                                    <p class="card__btn-cart-text">add to cart</p>
+                                </button>
+                                
+                            <div class="card__wishlist">
+                                
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="js/jquery.rateyo.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
