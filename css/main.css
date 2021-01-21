@@ -291,14 +291,18 @@
 
 .categories__mega-menu-inner{
     position: relative;
+    display: flex;
     background-color: #fff;
-    /* background: url(../image/icon_lang/daniel-llorente-QFEZc453y70-unsplash.jpg); */
     background-size: contain;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.05);
     border-radius: 5px;
-
     padding: 27px 20px 25px 20px;
+    z-index: 5;
+}
+
+.categories__mega-menu-inner .card{
+    border: 2px solid #e3e3e3;
 }
 
 .categories__mega-menu-inner::before{
@@ -785,7 +789,6 @@
     width: 100%;
     height: 100%;
     visibility: visible;
-    z-index: 1;
 }
 
 .promo__inner{
@@ -1065,11 +1068,49 @@
 /* card */
 
 .card {
+    position: relative;
     max-width: 270px;
     background-color: #fff;
     border-radius: 5px;
     padding: 22px;
 }
+
+.card::before {
+    content: "top";
+    position: absolute;
+    font-size: 10px;
+    color: #d24a43;
+    right: 22px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: none;
+}
+.card::after {
+    content: "sale";
+    position: absolute;
+    font-size: 10px;
+    color:  #7cb91e;;
+    right: 22px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: none;
+}
+
+.card--sale.card::after {
+    display: block;
+}
+
+.card--top.card::before {
+    display: block;
+}
+
+.card--top.card--sale.card::after {
+    top:44px;
+}
+
+
 
 .card__image {
     line-height: 0;
@@ -1091,6 +1132,8 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
+    height: 33px;
+    justify-self: flex-start;
 }
 .card__rating {
     margin-bottom: 20px;
@@ -1102,30 +1145,59 @@
     align-items: flex-end;
     max-width: 100%;
     margin-bottom: 20px;
+    height: 35px;
+}
+
+
+.tab-content{
+    display: flex;
+    justify-content: space-between;
 }
 
 /* CARD__PRICE (Old prace or new or sale) */
 
-.card__price-inner{
-    display: inline-block;
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 270px;
+    height: 415px;
+}
+
+.card__price{
+    display: flex
 }
 
 .card__price-sale{
-    background: url(../icons/icon_mod/bg.svg);
-    color: #fff;
-    font-size: 10px;
-    font-weight: 600;
-    height: 33px;
-    width: 34px;
-    display: inline-block;
-    margin: -2px 3px -2px -2px;
+   align-self: center;
+   font-size: 10px;
+   font-weight: 600;
+   color: #fff;
+   margin-right: 7px;
+   background-color: red;
+   padding: 11px 7px 11px 7px;
+   border-radius: 4px;
+   position: relative;
+   display: none;
+}
+
+.card__price-sale::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    right: -3px;
+    background-color: red;
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .card__price-old{
     font-size: 11px;
     color: #9a9a9a;
     font-weight: 600;
-    margin-bottom: 5px; 
+    margin-bottom: 3px;
+    display: none; 
 }
 
 .card__price-old::before{
@@ -1155,20 +1227,42 @@
 .card__avalible-true{
     background: url(../icons/icon_social/check-solid.svg) no-repeat left center;
     padding-left: 18px;
-    display: none;
 }
  
 .card__avalible-false{
     background: url(../icons/icon_social/times-solid.svg) no-repeat left center;
     padding-left: 18px;
-}
-
-.card--true .card__avalible-false{
+    align-self: center;
     display: none;
 }
 
-.card--true .card__avalible-true{
+.card--false .card__inner{
+    justify-content: center;
+    align-items: center;
+}
+
+.card--false .card__price {
+    display: none;
+}
+
+.card--false .card__avalible-false{
+    display: flex;
+}
+
+.card--false .card__avalible-true{
+    display: none;
+}
+
+.card--sale .card__price-old{
     display: block;
+}
+
+.card--sale .card__price-current{
+    font-size: 18px;
+}
+
+.card--sale .card__price-sale {
+    display: flex;
 }
 
 .card__btn-cart {
@@ -1176,6 +1270,7 @@
     border-radius: 40px;
     background-color: #ffde00;
     padding: 15px;
+    align-self: flex-start;
 }
 
 .card__btn-cart-text{
